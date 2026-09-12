@@ -1,0 +1,7 @@
+index.js
+wrangler.jsonc
+README.md
+.assetsignore
+.git
+.gitignore
+node_modules
