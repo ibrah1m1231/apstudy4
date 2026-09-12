@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "apstudy7",
+  "main": "index.js",
+  "compatibility_date": "2026-09-01",
+
+  // Cloudflare's AI service. This binding IS the credential — the platform
+  // authorises the Worker itself, so there is no key to store anywhere.
+  "ai": {
+    "binding": "AI"
+  },
+
+  // The repo root is the site. .assetsignore keeps the source files out.
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
+}
